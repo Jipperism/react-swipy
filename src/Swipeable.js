@@ -65,10 +65,13 @@ export default class Swipeable extends PureComponent {
     if (swiped || !moving) return;
 
     let offset = getOffset(start, end);
+    console.log("regular offset", offset);
     if (direction === "left") {
       offset = Math.max(offset, 0);
+      console.log("offset for left direction", offset);
     } else if (direction === "right") {
       offset = Math.min(0, offset);
+      console.log("offset for right direction", offset);
     }
     this.setState({offset});
   });
