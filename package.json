@@ -1,7 +1,7 @@
 {
   "name": "@sustainhawaii/react-swipy",
   "author": "Charles Koehl <charleskoehl>",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "ISC",
   "description": "React swipeable component (Fork of react-swipy by goncy)",
   "main": "dist/react-swipy.min.js",
@@ -16,7 +16,7 @@
     "swipy"
   ],
   "scripts": {
-    "build": "PACKAGE_NAME=@sustainhawaii/react-swipy rollup --config scripts/rollup.config.js",
+    "build": "PACKAGE_NAME=react-swipy rollup --config scripts/rollup.config.js",
     "pub": "npm run build && git push --follow-tags origin master && npm publish --access public",
     "test": "jest",
     "cover": "npm test -- --coverage"
