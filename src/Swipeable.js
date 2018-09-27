@@ -21,6 +21,7 @@ const SWIPE_CONFIG = {
 const DEFAULT_PROPS = {
   limit: 120,
   min: 40,
+  direction: "both",
 };
 
 const INITIAL_STATE = {
@@ -59,10 +60,17 @@ export default class Swipeable extends PureComponent {
 
   onDragMove = withX(end => {
     const {start, swiped, moving} = this.state;
+    const {direction} = this.props;
 
     if (swiped || !moving) return;
 
-    this.setState({offset: getOffset(start, end)});
+    let offset = getOffset(start, end);
+    if (direction === "left") {
+      offset = -Math.abs(offset);
+    } else if (direction === "right") {
+      offset = Math.abs(offset);
+    }
+    this.setState({offset});
   });
 
   onDragEnd = () => {
@@ -131,7 +139,7 @@ export default class Swipeable extends PureComponent {
 
   render() {
     const {offset, swiped, pristine, forced} = this.state;
-    const {children, limit, buttons, min} = this.props;
+    const {children, limit, min} = this.props;
 
     return (
       <Fragment>
@@ -160,11 +168,6 @@ export default class Swipeable extends PureComponent {
             </div>
           )}
         </Spring>
-        {buttons &&
-          buttons({
-            right: () => this.forceSwipe("right"),
-            left: () => this.forceSwipe("left"),
-          })}
       </Fragment>
     );
   }
