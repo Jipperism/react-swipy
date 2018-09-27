@@ -90,6 +90,11 @@ Offset in px swiped to consider as swipe
 
 Offset when opacity fade should start
 
+#### direction
+`String`
+
+Swipe direction restricted to ('left' or 'right'); defaults to 'both'
+
 #### onBeforeSwipe
 `Function`
 
