@@ -1,5 +1,13 @@
 export const getDirection = offset => (offset > 0 ? "right" : "left");
-export const getOffset = (start, end) => -((start - end) * 0.75);
+export const getOffset = (start, end, direction) => {
+  let result = -((start - end) * 0.75);
+  if (direction === "left") {
+    result = Math.min(result, 0);
+  } else if (direction === "right") {
+    result = Math.max(0, result);
+  }
+  return result;
+};
 export const getEvent = e => (e.touches ? e.touches[0] : e);
 export const withX = fn => e => fn(getEvent(e).pageX);
 export const getLimitOffset = (limit, direction) =>

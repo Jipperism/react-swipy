@@ -1,7 +1,7 @@
 {
   "name": "@sustainhawaii/react-swipy",
   "author": "Charles Koehl <charleskoehl>",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "ISC",
   "description": "React swipeable component (Fork of react-swipy by goncy)",
   "main": "dist/react-swipy.min.js",

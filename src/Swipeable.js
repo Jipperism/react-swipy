@@ -60,20 +60,11 @@ export default class Swipeable extends PureComponent {
 
   onDragMove = withX(end => {
     const {start, swiped, moving} = this.state;
-    const {direction} = this.props;
+    const {direction} = this.props
 
     if (swiped || !moving) return;
 
-    let offset = getOffset(start, end);
-    console.log("regular offset", offset);
-    if (direction === "left") {
-      offset = Math.max(offset, 0);
-      console.log("offset for left direction", offset);
-    } else if (direction === "right") {
-      offset = Math.min(0, offset);
-      console.log("offset for right direction", offset);
-    }
-    this.setState({offset});
+    this.setState({offset: getOffset(start, end, direction)});
   });
 
   onDragEnd = () => {
