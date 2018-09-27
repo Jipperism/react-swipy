@@ -139,7 +139,7 @@ export default class Swipeable extends PureComponent {
 
   render() {
     const {offset, swiped, pristine, forced} = this.state;
-    const {children, limit, min} = this.props;
+    const {children, limit, buttons, min} = this.props;
 
     return (
       <Fragment>
@@ -168,6 +168,11 @@ export default class Swipeable extends PureComponent {
             </div>
           )}
         </Spring>
+        {buttons &&
+          buttons({
+            right: () => this.forceSwipe("right"),
+            left: () => this.forceSwipe("left"),
+          })}
       </Fragment>
     );
   }
