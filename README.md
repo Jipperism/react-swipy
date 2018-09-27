@@ -1,4 +1,4 @@
-# React Swipy (`react-swipy`)
+# fork of React Swipy (`react-swipy`) by goncy
 [![Build Status](https://travis-ci.org/goncy/react-swipy.svg?branch=master)](https://travis-ci.org/goncy/react-swipy)
 [![Coverage Status](https://coveralls.io/repos/github/goncy/react-swipy/badge.svg?branch=master)](https://coveralls.io/github/goncy/react-swipy?branch=master)
 
