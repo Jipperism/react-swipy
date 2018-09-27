@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/goncy/react-swipy.svg?branch=master)](https://travis-ci.org/goncy/react-swipy)
 [![Coverage Status](https://coveralls.io/repos/github/goncy/react-swipy/badge.svg?branch=master)](https://coveralls.io/github/goncy/react-swipy?branch=master)
 
-A simple Tinder-like swipeable React component
+A simple, horizontally-swipeable React HOC
 
 ## Installation
 ```sh
