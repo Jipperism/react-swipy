@@ -13,11 +13,11 @@ yarn add sustainhawaii/react-swipy
 ```
 
 ## Differences in this fork
-Removed rotation from swipe animation for a more standard swipe.
-Added "direction" prop to optionally restrict swiping to left or right only.
+ * Removed rotation from swipe animation for a more standard swipe.
+ * Added optional "direction" prop to restrict swiping to left or right.
 
 ## Why
-I didn't like the lack of control on mose deck-based swipeable components out there
+I needed a an HOC to swipe-left on a react component with a callbacks for the swipe events.
 
 ## How
 [![See in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5x53pnrn3x)
