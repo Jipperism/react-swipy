@@ -149,7 +149,7 @@ export default class Swipeable extends PureComponent {
             <div
               style={{
                 opacity,
-                transform: `translateX(${offset}px) rotate(${offset / 10}deg)`,
+                transform: `translateX(${offset}px)`,
                 height: "100%",
                 width: "100%",
               }}
