@@ -17,7 +17,7 @@ yarn add sustainhawaii/react-swipy
  * Added optional "direction" prop to restrict swiping to left or right.
 
 ## Why
-I needed a an HOC to swipe-left on a react component with a callbacks for the swipe events.
+I needed a an HOC to swipe left, right or both on a react component with a callbacks for the swipe events.
 
 ## How
 [![See in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5x53pnrn3x)
