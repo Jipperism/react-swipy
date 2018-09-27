@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/goncy/react-swipy.git"
+    "url": "git@github.com:SustainHawaii/react-swipy.git"
   },
   "files": [
     "README.md",
@@ -78,5 +78,9 @@
       "/node_modules/",
       "/__tests__/helpers"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/SustainHawaii/react-swipy/issues"
+  },
+  "homepage": "https://github.com/SustainHawaii/react-swipy#readme"
 }
