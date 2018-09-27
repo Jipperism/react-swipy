@@ -66,9 +66,9 @@ export default class Swipeable extends PureComponent {
 
     let offset = getOffset(start, end);
     if (direction === "left") {
-      offset = -Math.abs(offset);
+      offset = Math.max(offset, 0);
     } else if (direction === "right") {
-      offset = Math.abs(offset);
+      offset = Math.min(0, offset);
     }
     this.setState({offset});
   });
