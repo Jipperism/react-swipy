@@ -7,10 +7,13 @@ A simple Tinder-like swipeable React component
 ## Installation
 ```sh
 # NPM
-npm install --save react-swipy
+npm install --save sustainhawaii/react-swipy
 # Yarn
-yarn add react-swipy
+yarn add sustainhawaii/react-swipy
 ```
+
+## Differences in this fork
+Removed rotation from swipe animation.
 
 ## Why
 I didn't like the lack of control on mose deck-based swipeable components out there
