@@ -16,7 +16,7 @@
     "swipy"
   ],
   "scripts": {
-    "build": "PACKAGE_NAME=@SustainHawaii/react-swipy rollup --config scripts/rollup.config.js",
+    "build": "PACKAGE_NAME=@sustainhawaii/react-swipy rollup --config scripts/rollup.config.js",
     "pub": "npm run build && git push --follow-tags origin master && npm publish --access public",
     "test": "jest",
     "cover": "npm test -- --coverage"
