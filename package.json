@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "build": "PACKAGE_NAME=react-swipy rollup --config scripts/rollup.config.js",
+    "prepare": "npm run build",
     "pub": "npm run build && git push --follow-tags origin master && npm publish --access public",
     "test": "jest",
     "cover": "npm test -- --coverage"
