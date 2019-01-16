@@ -1,7 +1,7 @@
 {
   "name": "@virpp/react-swipy",
   "author": "Jip Stavenuiter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "description": "React swipeable component (Fork of react-swipy by @sustainhawaii)",
   "main": "dist/react-swipy.min.js",
