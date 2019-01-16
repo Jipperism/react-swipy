@@ -5,6 +5,8 @@ export const getOffset = (start, end, direction) => {
     result = Math.min(result, 0);
   } else if (direction === "right") {
     result = Math.max(0, result);
+  } else if (direction === "none") {
+    result = 0;
   }
   return result;
 };

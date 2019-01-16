@@ -60,7 +60,7 @@ export default class Swipeable extends PureComponent {
 
   onDragMove = withX(end => {
     const {start, swiped, moving} = this.state;
-    const {direction} = this.props
+    const {direction} = this.props;
 
     if (swiped || !moving) return;
 

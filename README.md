@@ -93,7 +93,7 @@ Offset when opacity fade should start
 #### direction
 `String`
 
-Swipe direction restricted to ('left' or 'right'); defaults to 'both'
+Swipe direction restricted to ('left', 'right' or 'none'); defaults to 'both'
 
 #### onBeforeSwipe
 `Function`
